@@ -65,14 +65,14 @@ Wire Wire Line
 Wire Wire Line
 	1700 1950 1650 1950
 Wire Wire Line
-	1700 1700 2150 1700
+	1700 1700 2150 1900
 Connection ~ 1700 1700
 Wire Wire Line
 	1700 1700 1700 1750
-Text Label 2150 1700 2    50   ~ 0
+Text Label 2150 1900 2    50   ~ 0
 1_D-
 Wire Wire Line
-	1700 1900 2150 1900
+	1700 1900 2150 1700
 Connection ~ 1700 1900
 Wire Wire Line
 	1700 1900 1700 1950
@@ -232,19 +232,12 @@ Wire Wire Line
 Wire Wire Line
 	1650 4100 1700 4100
 Wire Wire Line
-	1700 4100 1700 4150
-Wire Wire Line
 	1700 4200 1650 4200
 Wire Wire Line
-	1700 3950 2150 3950
+	1700 3950 2150 4150
 Connection ~ 1700 3950
 Wire Wire Line
 	1700 3950 1700 4000
-Wire Wire Line
-	1700 4150 2150 4150
-Connection ~ 1700 4150
-Wire Wire Line
-	1700 4150 1700 4200
 $Comp
 L josh-passive:RN RN?
 U 3 1 603A21FB
@@ -336,11 +329,11 @@ F 3 "" H 2550 4550 50  0001 C CNN
 	1    2550 4550
 	1    0    0    -1  
 $EndComp
-Text Label 2150 1900 2    50   ~ 0
+Text Label 2150 1700 2    50   ~ 0
 1_D+
-Text Label 2150 4150 2    50   ~ 0
-2_D+
 Text Label 2150 3950 2    50   ~ 0
+2_D+
+Text Label 2150 4150 2    50   ~ 0
 2_D-
 $Comp
 L power:PWR_FLAG #FLG?
@@ -378,11 +371,11 @@ Wire Wire Line
 Connection ~ 2350 1150
 Wire Wire Line
 	2350 1150 2550 1150
-Text Label 3400 1900 2    50   ~ 0
+Text Label 3400 1700 2    50   ~ 0
 USB_1_D+
 Wire Wire Line
 	2950 1900 3400 1900
-Text Label 3400 1700 2    50   ~ 0
+Text Label 3400 1900 2    50   ~ 0
 USB_1_D-
 Wire Wire Line
 	2950 1700 3400 1700
@@ -390,9 +383,9 @@ Wire Wire Line
 	2950 3950 3400 3950
 Wire Wire Line
 	2950 4150 3400 4150
-Text Label 3400 4150 2    50   ~ 0
-USB_2_D+
 Text Label 3400 3950 2    50   ~ 0
+USB_2_D+
+Text Label 3400 4150 2    50   ~ 0
 USB_2_D-
 Text Notes 1100 5525 0    100  ~ 0
 USB Switch and Hub
@@ -1831,4 +1824,11 @@ F 3 "" H 10200 5175 50  0001 C CNN
 	1    10200 5175
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1700 4100 1700 4150
+Wire Wire Line
+	1700 4150 2150 3950
+Connection ~ 1700 4150
+Wire Wire Line
+	1700 4150 1700 4200
 $EndSCHEMATC

@@ -89,32 +89,6 @@ F 3 "~" H 2800 1150 50  0001 C CNN
 	1    2800 1150
 	0    1    1    0   
 $EndComp
-$Comp
-L josh-passive:RN RN?
-U 1 1 603A219F
-P 1850 1350
-AR Path="/5EDC3803/603A219F" Ref="RN?"  Part="1" 
-AR Path="/603A219F" Ref="RN1"  Part="1" 
-F 0 "RN1" H 1850 1450 50  0000 C CNN
-F 1 "5K1" H 1850 1350 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1850 1350 50  0001 C CNN
-F 3 "~" V 1850 1350 50  0001 C CNN
-	1    1850 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L josh-passive:RN RN?
-U 2 1 603A21A5
-P 1850 1450
-AR Path="/5EDC3803/603A21A5" Ref="RN?"  Part="2" 
-AR Path="/603A21A5" Ref="RN1"  Part="2" 
-F 0 "RN1" H 1850 1350 50  0000 C CNN
-F 1 "5K1" H 1850 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1850 1450 50  0001 C CNN
-F 3 "~" V 1850 1450 50  0001 C CNN
-	2    1850 1450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 1450 1650 1450
 Wire Wire Line
@@ -238,36 +212,8 @@ Wire Wire Line
 Connection ~ 1700 3950
 Wire Wire Line
 	1700 3950 1700 4000
-$Comp
-L josh-passive:RN RN?
-U 3 1 603A21FB
-P 1850 3600
-AR Path="/5EDC3803/603A21FB" Ref="RN?"  Part="3" 
-AR Path="/603A21FB" Ref="RN1"  Part="3" 
-F 0 "RN1" H 1850 3700 50  0000 C CNN
-F 1 "5K1" H 1850 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1850 3600 50  0001 C CNN
-F 3 "~" V 1850 3600 50  0001 C CNN
-	3    1850 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L josh-passive:RN RN?
-U 4 1 603A2201
-P 1850 3700
-AR Path="/5EDC3803/603A2201" Ref="RN?"  Part="4" 
-AR Path="/603A2201" Ref="RN1"  Part="4" 
-F 0 "RN1" H 1850 3600 50  0000 C CNN
-F 1 "5K1" H 1850 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 1850 3700 50  0001 C CNN
-F 3 "~" V 1850 3700 50  0001 C CNN
-	4    1850 3700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 3700 1650 3700
-Wire Wire Line
-	1650 3600 1700 3600
 Wire Wire Line
 	2000 3600 2050 3600
 Wire Wire Line
@@ -389,19 +335,6 @@ Text Label 3400 4150 2    50   ~ 0
 USB_2_D-
 Text Notes 1100 5525 0    100  ~ 0
 USB Switch and Hub
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
-U 1 1 603A2178
-P 1050 1750
-AR Path="/5EDC3803/603A2178" Ref="J?"  Part="1" 
-AR Path="/603A2178" Ref="J1"  Part="1" 
-F 0 "J1" H 1157 2617 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1157 2526 50  0000 C CNN
-F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 1200 1750 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 1750 50  0001 C CNN
-	1    1050 1750
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:USB_C_Receptacle_USB2.0 J?
 U 1 1 603A21D5
@@ -1831,4 +1764,71 @@ Wire Wire Line
 Connection ~ 1700 4150
 Wire Wire Line
 	1700 4150 1700 4200
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 603A2178
+P 1050 1750
+AR Path="/5EDC3803/603A2178" Ref="J?"  Part="1" 
+AR Path="/603A2178" Ref="J1"  Part="1" 
+F 0 "J1" H 1157 2617 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1157 2526 50  0000 C CNN
+F 2 "josh-connectors:USB_C_U262-161N-4BVC11" H 1200 1750 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1200 1750 50  0001 C CNN
+	1    1050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3600 1700 3600
+$Comp
+L Device:R RN?
+U 1 1 603A2201
+P 1850 3700
+AR Path="/5EDC3803/603A2201" Ref="RN?"  Part="4" 
+AR Path="/603A2201" Ref="R20"  Part="1" 
+F 0 "R20" V 1950 3700 50  0000 C CNN
+F 1 "5K1" V 1850 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1850 3700 50  0001 C CNN
+F 3 "~" V 1850 3700 50  0001 C CNN
+	1    1850 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R RN?
+U 1 1 603A21A5
+P 1850 1450
+AR Path="/5EDC3803/603A21A5" Ref="RN?"  Part="2" 
+AR Path="/603A21A5" Ref="R18"  Part="1" 
+F 0 "R18" V 1950 1450 50  0000 C CNN
+F 1 "5K1" V 1850 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1850 1450 50  0001 C CNN
+F 3 "~" V 1850 1450 50  0001 C CNN
+	1    1850 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R RN?
+U 1 1 603A219F
+P 1850 1350
+AR Path="/5EDC3803/603A219F" Ref="RN?"  Part="1" 
+AR Path="/603A219F" Ref="R17"  Part="1" 
+F 0 "R17" V 1750 1350 50  0000 C CNN
+F 1 "5K1" V 1850 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1850 1350 50  0001 C CNN
+F 3 "~" V 1850 1350 50  0001 C CNN
+	1    1850 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R RN?
+U 1 1 603A21FB
+P 1850 3600
+AR Path="/5EDC3803/603A21FB" Ref="RN?"  Part="3" 
+AR Path="/603A21FB" Ref="R19"  Part="1" 
+F 0 "R19" V 1750 3600 50  0000 C CNN
+F 1 "5K1" V 1850 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1850 3600 50  0001 C CNN
+F 3 "~" V 1850 3600 50  0001 C CNN
+	1    1850 3600
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
